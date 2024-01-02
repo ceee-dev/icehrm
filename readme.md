@@ -14,6 +14,35 @@ IceHrm is an [HRM software](https://icehrm.com) which enable companies to manage
 
 ## Installation
 
+-Step 1: Update System
+sudo apt -y update
+
+-Step 2: Install basic dependencies
+sudo apt -y install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+
+-Step 3: Install Docker CE
+-remove older version
+sudo apt remove docker docker-engine docker.io containerd runc
+
+-install new version
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/docker-archive-keyring.gpg
+
+-You can then add Docker CE repository to Ubuntu
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+
+-Finally install Docker CE on Ubuntu
+sudo apt update
+sudo apt install docker-ce docker-ce-cli containerd.io
+
+-Start and enable docker service
+sudo systemctl enable docker
+sudo systemctl start docker
+
+-Add your user account to docker group
+sudo usermod -aG docker $USER
+newgrp docker
+
+
 ### Using Docker
 
 - Install docker on Mac, Windows or Linux [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
