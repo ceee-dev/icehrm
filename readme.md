@@ -20,6 +20,7 @@ IceHrm is an [HRM software](https://icehrm.com) which enable companies to manage
 - Download the [latest version of IceHrm](https://github.com/gamonoid/icehrm/releases/latest) and extract it.
 - Alternatively you can cone the repo `git clone https://github.com/gamonoid/icehrm.git`
 ```
+sudo apt install npm net-tools wget git 
 cd icehrm
 npm run setup
 npm run docker:build
