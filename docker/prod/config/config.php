@@ -4,11 +4,11 @@ ini_set('error_log', '/var/www/html/app/data/icehrm.log');
 define('CLIENT_NAME', 'icehrm');
 define('APP_BASE_PATH', '/var/www/html/core/');
 define('CLIENT_BASE_PATH', '/var/www/html/app/');
-define('BASE_URL','http://metahrm.ngja.gov.lk:3128/web/');
-define('CLIENT_BASE_URL','http://metahrm.ngja.gov.lk:3128/app/');
+define('BASE_URL','http://ngjahrm.ceee.dev:3128/web/');
+define('CLIENT_BASE_URL','http://ngjahrm.ceee.dev:3128/app/');
 
-define('APP_DB', 'icehrm');
-define('APP_USERNAME', 'prod');
+define('APP_DB', 'ngjahrm');
+define('APP_USERNAME','prod');
 define('APP_PASSWORD', 'prod');
 define('APP_HOST', 'mysql-prod');
 define('APP_CON_STR', 'mysqli://'.APP_USERNAME.':'.APP_PASSWORD.'@'.APP_HOST.'/'.APP_DB);
