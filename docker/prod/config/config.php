@@ -1,13 +1,13 @@
 <?php
 ini_set('error_log', '/var/www/html/app/data/icehrm.log');
 
-define('CLIENT_NAME', 'ngjahrm');
+define('CLIENT_NAME', 'icehrm');
 define('APP_BASE_PATH', '/var/www/html/core/');
 define('CLIENT_BASE_PATH', '/var/www/html/app/');
 define('BASE_URL','http://ngjahrm.ceee.dev:3128/web');
 define('CLIENT_BASE_URL','http://ngjahrm.ceee.dev:3128/app/');
 
-define('APP_DB', 'ngjahrm');
+define('APP_DB', 'icehrm');
 define('APP_USERNAME','prod');
 define('APP_PASSWORD', 'prod');
 define('APP_HOST', 'mysql-prod');
